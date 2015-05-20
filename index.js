@@ -1,4 +1,6 @@
+(function (exports) {
 "use strict";
+var Unibabel = {};
 
 /*\
 |*|
@@ -170,3 +172,23 @@ function strToUTF8Arr (sDOMStr) {
   return aBytes;
 
 }
+
+// helpers, not generally useful
+Unibabel.uint6ToB64 = uint6ToB64;
+Unibabel.b64ToUint6 = b64ToUint6;
+
+/* Base64 <--> TypedArray <--> UTF-8 */
+
+// TypedArray <--> UTF-8
+Unibabel.strToUtf8Arr = strToUTF8Arr;
+Unibabel.Utf8ArrToStr = UTF8ArrToStr;
+// TypedArray <--> Base64
+Unibabel.base64ToArr = base64EncArr;
+Unibabel.arrToBase64 = base64DecToArr;
+
+if ('undefined' !== typeof module) {
+  module.exports = exports = Unibabel;
+}
+
+exports.Unibabel = Unibabel;
+}('undefined' !== typeof window ? window : exports));
