@@ -181,10 +181,10 @@ Unibabel.b64ToUint6 = b64ToUint6;
 
 // TypedArray <--> UTF-8
 Unibabel.strToUtf8Arr = strToUTF8Arr;
-Unibabel.Utf8ArrToStr = UTF8ArrToStr;
+Unibabel.utf8ArrToStr = UTF8ArrToStr;
 // TypedArray <--> Base64
-Unibabel.base64ToArr = base64EncArr;
-Unibabel.arrToBase64 = base64DecToArr;
+Unibabel.arrToBase64 = base64EncArr;
+Unibabel.base64ToArr = base64DecToArr;
 
 if ('undefined' !== typeof module) {
   module.exports = exports = Unibabel;
