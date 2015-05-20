@@ -1,7 +1,7 @@
 {
   "name": "unibabel",
   "main": "index.js",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0",
   "homepage": "https://github.com/coolaj86/unibabel-js",
   "authors": [
     "AJ ONeal <awesome@coolaj86.com>"
