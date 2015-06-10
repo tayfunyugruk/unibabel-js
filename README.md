@@ -3,8 +3,7 @@ utf8-typed
 
 Base64, TypedArrays, and UTF-8 / Unicode conversions in Browser (and Node) JavaScript
 
-This is based wholly on the work by good folks at the MDN.
-See <https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding>
+See <https://coolaj86.com/articles/base64-unicode-utf-8-javascript-and-you/>
 
 API
 ===
@@ -18,6 +17,24 @@ var str = Unibabel.utf8ArrToStr(uint8Array);
 var base64 = Unibabel.arrToBase64(uint8Array)
 var uint8Array = Unibabel.base64ToArr(base64)
 ```
+
+**Normal APIs**
+
+* utf8ToBuffer(utf8str) => array
+* bufferToUtf8(array) => string
+
+* utf8ToBase64(utf8str) => base64
+* base64ToUtf8(base64) => string
+
+* bufferToBase64(array) => base64
+* base64ToBuffer(base64) => array
+
+**Helper APIs**
+
+* utf8ToBinaryString(utf8str) => binstr
+* binaryStringToUtf8(binstr) => utf8str
+* bufferToBinaryString(buffer) => binstr
+* binaryStringToBuffer(binstr) => array
 
 Examples
 ========
@@ -51,3 +68,26 @@ Mozilla has licensed this code in the Public Domain, which means that I am at li
 under the Apache 2, which is something that, general speaking, your legal department will feel more comfortable with.
 
 See <https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses>
+
+ChangeLog
+====
+
+v2.0.0
+------
+
+The new implementation is binary compatible with node.js, TextEncoder,
+and other more-common UTF-8 encodings.
+
+It is also based on DOM APIs which result in much less code and are still
+backwards compatible all the way back to IE6 (not on purpose, just that
+it happens to work).
+
+See <https://coolaj86.com/articles/base64-unicode-utf-8-javascript-and-you/>
+
+v1.0.0
+------
+
+This version was based on the work by good folks at the MDN, however,
+the UTF-8 conversion was not byte-compatible with other UTF-8 conversions
+(such as node.js and TextEncoder), so don't use it.
+See <https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding>
