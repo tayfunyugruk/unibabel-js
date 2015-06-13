@@ -1,4 +1,4 @@
-utf8-typed
+Unibabel
 ==========
 
 Base64, TypedArrays, and UTF-8 / Unicode conversions in Browser (and Node) JavaScript
@@ -12,6 +12,7 @@ See also
   * [text-encoding](https://github.com/inexorabletash/text-encoding)
   * [TextEncoderLite (based on Buffer)](https://github.com/coolaj86/TextEncoderLite/tree/litest)
   * [TextEncoderLite (based on text-encoding)](https://github.com/coolaj86/TextEncoderLite/tree/lite)
+  * [Beatgammit's base64-js](https://github.com/beatgammit/base64-js)
 
 API
 ===
