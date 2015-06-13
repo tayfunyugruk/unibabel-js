@@ -5,6 +5,14 @@ Base64, TypedArrays, and UTF-8 / Unicode conversions in Browser (and Node) JavaS
 
 See <https://coolaj86.com/articles/base64-unicode-utf-8-javascript-and-you/>
 
+See also
+
+  * [TextEncoder](https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder/encode) / [TextDecoder](https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/decode)
+  * [DateView](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView)
+  * [text-encoding](https://github.com/inexorabletash/text-encoding)
+  * [TextEncoderLite (based on Buffer)](https://github.com/coolaj86/TextEncoderLite/tree/litest)
+  * [TextEncoderLite (based on text-encoding)](https://github.com/coolaj86/TextEncoderLite/tree/lite)
+
 API
 ===
 
@@ -28,6 +36,13 @@ var uint8Array = Unibabel.base64ToArr(base64)
 
 * bufferToBase64(array) => base64
 * base64ToBuffer(base64) => array
+
+**Hex APIs**
+
+`unibabel.hex.js`
+
+* hexToBuffer(hexstr) => array
+* bufferToHex(array) => hexstr
 
 **Helper APIs**
 
