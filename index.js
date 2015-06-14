@@ -36,9 +36,7 @@ function binaryStringToUtf8(binstr) {
 }
 
 function bufferToUtf8(buf) {
-  var binstr = Array.prototype.map.call(buf, function (ch) {
-    return '0x' + String.fromCharCode(ch);
-  }).join('');
+  var binstr = bufferToBinaryString(buf);
 
   return binaryStringToUtf8(binstr);
 }
