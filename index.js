@@ -63,7 +63,7 @@ function bufferToBase64(arr) {
 function binaryStringToBuffer(binstr) {
   var buf;
 
-  if ('undefined' === typeof Uint8Array) {
+  if ('undefined' !== typeof Uint8Array) {
     buf = new Uint8Array(binstr.length);
   } else {
     buf = [];
