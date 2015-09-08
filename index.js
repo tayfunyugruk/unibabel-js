@@ -25,7 +25,7 @@ function utf8ToBase64(str) {
 
 function binaryStringToUtf8(binstr) {
   var escstr = binstr.replace(/(.)/g, function (m, p) {
-    var code = p.charCodeAt(p).toString(16).toUpperCase();
+    var code = p.charCodeAt(0).toString(16).toUpperCase();
     if (code.length < 2) {
       code = '0' + code;
     }
