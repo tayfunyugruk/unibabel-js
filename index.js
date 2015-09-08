@@ -6,7 +6,7 @@ function utf8ToBinaryString(str) {
   // replaces any uri escape sequence, such as %0A,
   // with binary escape, such as 0x0A
   var binstr = escstr.replace(/%([0-9A-F]{2})/g, function(match, p1) {
-    return String.fromCharCode('0x' + p1);
+    return String.fromCharCode(parseInt(p1,16));
   });
 
   return binstr;
@@ -25,7 +25,7 @@ function utf8ToBase64(str) {
 
 function binaryStringToUtf8(binstr) {
   var escstr = binstr.replace(/(.)/g, function (m, p) {
-    var code = p.charCodeAt(p).toString(16).toUpperCase();
+    var code = p.charCodeAt(0).toString(16).toUpperCase();
     if (code.length < 2) {
       code = '0' + code;
     }
