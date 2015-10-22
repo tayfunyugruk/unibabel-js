@@ -87,7 +87,7 @@ alert(sMyOutput);
 License
 =======
 
-* `unibabel.js` and `unibabel.hex.js` are dual-licensed as Apache 2.0 and MIT.
+* `index.js` and `unibabel.hex.js` are dual-licensed as Apache 2.0 and MIT.
 * `unibabel.base32.js` is a modified version of [thirty-two](https://github.com/chrisumbel/thirty-two) and is therefore licensed MIT.
 
 Some parts of the code were taken from MDN, which Mozilla has licensed in the Public Domain,
