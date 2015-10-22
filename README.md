@@ -1,7 +1,7 @@
 Unibabel
-==========
+========
 
-Base64, TypedArrays, and UTF-8 / Unicode conversions in Browser (and Node) JavaScript
+Minimalistic Base64, TypedArrays, and UTF-8 / Unicode conversions in Browser (and Node) JavaScript
 
 See <https://coolaj86.com/articles/base64-unicode-utf-8-javascript-and-you/>
 
@@ -45,6 +45,13 @@ var uint8Array = Unibabel.base64ToArr(base64)
 * hexToBuffer(hexstr) => array
 * bufferToHex(array) => hexstr
 
+**Base32 APIs**
+
+`unibabel.base32.js`
+
+* base32ToBuffer(b32str) => array
+* bufferToBase32(array) => b32str
+
 **Helper APIs**
 
 * utf8ToBinaryString(utf8str) => binstr
@@ -80,13 +87,21 @@ alert(sMyOutput);
 License
 =======
 
-Mozilla has licensed this code in the Public Domain, which means that I am at liberty to re-license my copy
-under the Apache 2, which is something that, general speaking, your legal department will feel more comfortable with.
+* `unibabel.js` and `unibabel.hex.js` are dual-licensed as Apache 2.0 and MIT.
+* `unibabel.base32.js` is a modified version of [thirty-two](https://github.com/chrisumbel/thirty-two) and is therefore licensed MIT.
+
+Some parts of the code were taken from MDN, which Mozilla has licensed in the Public Domain,
+which means that I am at liberty to re-license my copy under the Apache 2 and MIT licenses.
 
 See <https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses>
 
 ChangeLog
 ====
+
+v2.1.0
+------
+
+Added `unibabel.base32.js`
 
 v2.0.0
 ------
