@@ -131,11 +131,11 @@ exports.base32ToBuffer = function(encoded) {
             throw new Error('Invalid input - it is not base32 encoded string');
         }
     }
-    if (decoded.slice) {
+
+    if (decoded.slice) { // Array or TypedArray
       return decoded.slice(0, plainPos);
-    } else {
-      // Mobile Safari's Uint8Array doesn't have slice
-      return Array.prototype.slice.call(decoded, 0, plainPos);
+    } else { // Mobile Safari TypedArray
+      return new Uint8Array(Array.prototype.slice.call(decoded, 0, plainPos));
     }
 };
 
