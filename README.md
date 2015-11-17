@@ -43,6 +43,8 @@ var uint8Array = Unibabel.base64ToArr(base64)
 
 **Normal APIs**
 
+`index.js`
+
 * utf8ToBuffer(utf8str) => array
 * bufferToUtf8(array) => string
 * utf8ToBase64(utf8str) => base64
