@@ -25,6 +25,7 @@ buf.toString('hex');
 buf.toString('base64');
 buf.toString('ascii');
 buf.toString('utf8');
+buf.toString('binary'); // deprecated, do not use
 ```
 
 API
