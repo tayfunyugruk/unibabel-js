@@ -45,10 +45,8 @@ var uint8Array = Unibabel.base64ToArr(base64)
 
 * utf8ToBuffer(utf8str) => array
 * bufferToUtf8(array) => string
-
 * utf8ToBase64(utf8str) => base64
 * base64ToUtf8(base64) => string
-
 * bufferToBase64(array) => base64
 * base64ToBuffer(base64) => array
 
