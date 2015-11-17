@@ -1,7 +1,7 @@
 Unibabel
 ========
 
-Minimalistic **Base64**, **TypedArrays**, and **UTF-8** / **Unicode** conversions in Browser (and Node) JavaScript. Optional add-on support for **hex** and **base32.
+Minimalistic **Base64**, **TypedArrays**, and **UTF-8** / **Unicode** conversions in Browser (and Node) JavaScript. Optional add-on support for **hex** and **base32**.
 
 See <https://coolaj86.com/articles/base64-unicode-utf-8-javascript-and-you/>
 
