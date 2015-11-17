@@ -14,6 +14,19 @@ See also
   * [TextEncoderLite (based on text-encoding)](https://github.com/coolaj86/TextEncoderLite/tree/lite)
   * [Beatgammit's base64-js](https://github.com/beatgammit/base64-js)
 
+Quick Note to Node.js Users
+------------------------
+
+You SHOULD NOT use this module. You already have [`Buffer`](https://nodejs.org/api/buffer.html) and [`thirty-two`](https://github.com/chrisumbel/thirty-two):
+
+```javascript
+var buf = new Buffer('I ½ ♥ 💩', 'utf8');
+buf.toString('hex');
+buf.toString('base64');
+buf.toString('ascii');
+buf.toString('utf8');
+```
+
 API
 ===
 
