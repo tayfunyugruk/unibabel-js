@@ -1,6 +1,22 @@
 (function () {
 'use strict';
 
+if (!btoa) {
+  function btoa(str) {
+    var buffer
+      ;
+  
+    if (str instanceof Buffer) {
+      buffer = str;
+    } else {
+      buffer = new Buffer(str.toString(), 'binary');
+    }
+  
+    return buffer.toString('base64');
+  }
+}
+
+
 function utf8ToBinaryString(str) {
   var escstr = encodeURIComponent(str);
   // replaces any uri escape sequence, such as %0A,

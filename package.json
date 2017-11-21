@@ -33,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/coolaj86/unibabel-js/issues"
   },
-  "homepage": "https://github.com/coolaj86/unibabel-js#readme"
+  "homepage": "https://github.com/coolaj86/unibabel-js#readme",
+  "dependencies": {
+    "btoa": "^1.1.2"
+  }
 }
